@@ -1,0 +1,23 @@
+@model List<ControlAcademicoMvc.Models.Estudiante>
+
+<h1>Listado de Estudiantes</h1>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Carné</th>
+            <th>Nombre</th>
+            <th>Promedio</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var estudiante in Model)
+        {
+            <tr>
+                <td>@estudiante.Carne</td>
+                <td>@estudiante.Nombre</td>
+                <td>@estudiante.Promedio</td>
+            </tr>
+        }
+    </tbody>
+</table>
